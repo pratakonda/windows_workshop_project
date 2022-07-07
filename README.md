@@ -1,5 +1,4 @@
-**Welcome to the Ansible for Windows Automation workshop!**
+@ -0,0 +1,3 @@
+# Welcome to the Ansible for Windows Automation workshop!
 
-
-
-![image](https://user-images.githubusercontent.com/30244181/177680737-ce67dce7-c344-4adf-b8aa-38ca37e234a2.png)
+![Ansible Automation Platform](https://raw.githubusercontent.com/ansible/workshops/master/images/rh-ansible-automation-platform.png)
