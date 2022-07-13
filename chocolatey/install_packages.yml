@@ -1,0 +1,28 @@
+---
+- name: Install Specific versions of packages using Chocolatey
+  hosts: all
+  gather_facts: false
+  vars:
+    choco_packages:
+      - name: nodejs
+        version: 13.0.0
+      - name: python
+        version: 3.6.0
+  tasks:
+
+  - name: Install specific versions of packages sequentially
+    chocolatey.chocolatey.win_chocolatey:
+      name: ""
+      version: ""
+    loop: ""
+
+  - name: Check python version
+    ansible.windows.win_command: python --version
+    register: check_python_version
+
+  - name: Check nodejs version
+    ansible.windows.win_command: node --version
+    register: check_node_version
+
+  - ansible.builtin.debug:
+      msg: Python Version is  and NodeJS version is 
